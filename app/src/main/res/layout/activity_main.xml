@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.nino.sheyvarebulebi.MainActivity"
+    android:background="@drawable/ic_launcher_foreground">
+    
+    <LinearLayout
+        android:id="@+id/gogos_saxeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/gSaxeli_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/label"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/gSaxeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:hint="@string/hint_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bichis_saxeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gogos_saxeli"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/bSaxeli_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/label"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/bSaxeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:hint="@string/hint_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/siyvarulis_balada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:hint="shedegi"
+        android:layout_centerInParent="true"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="+"
+        android:textSize="40dp"
+        android:onClick="onClick"/>
+
+
+</RelativeLayout>
