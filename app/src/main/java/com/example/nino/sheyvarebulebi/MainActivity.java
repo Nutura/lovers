@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText gogoSaxeli, bichisSaxeli;
+    private EditText gogosSaxeli, bichisSaxeli;
     private TextView shedegi;
 
     @Override
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        gogoSaxeli = (EditText) findViewById(R.id.gSaxeli);
+        gogosSaxeli = (EditText) findViewById(R.id.gSaxeli);
         bichisSaxeli = (EditText) findViewById(R.id.bSaxeli);
         shedegi = (TextView) findViewById(R.id.siyvarulis_balada);
 
@@ -27,16 +27,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        String name1 = String.valueOf(gogoSaxeli.getText());
+        String name1 = String.valueOf(gogosSaxeli.getText());
         String name2 = String.valueOf(bichisSaxeli.getText());
         switch (v.getId()){
             case R.id.plus_button:
-                shedegi.setText(name1 + " + " + name2 + " = შეყვარებულებს" );
+                if (gogosSaxeli.length()==0 || bichisSaxeli.length()==0  ) {
+                    shedegi.setText("!!! გთხოვთ , შეიყვანოთ სახელი" );
+                }
+                else {
+                    shedegi.setText(name1 + " + " + name2 + " = შეყვარებულებს" );
+                }
+
                 break;
             case R.id.bSaxeli_label:
                 shedegi.setText(" ");
                 break;
         }
-
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lovers</string>
+    <string name="hint_name">name</string>
+    <string name="label">NAME :</string>
+    <string name="result"> RESULT </string>
+    <string name="languageButton"> Georgian </string>
+</resources>

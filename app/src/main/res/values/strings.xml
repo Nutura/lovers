@@ -2,4 +2,6 @@
     <string name="app_name">sheyvarebulebi</string>
     <string name="hint_name">Saxeli</string>
     <string name="label">SAXELI :</string>
+    <string name="result"> RESULT </string>
+    <string name="languageButton" > Georgian </string>
 </resources>
